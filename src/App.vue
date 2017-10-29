@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <HelloWorld/>
+    <h3>go ahead!</h3>
+    
   </div>
 </template>
 
@@ -11,7 +12,7 @@ import HelloWorld from './components/HelloWorld'
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    HelloWorld 
   }
 }
 </script>
