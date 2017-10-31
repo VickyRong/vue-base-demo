@@ -1,9 +1,10 @@
 <template>
   <div class="content">
       <h3>home页面</h3>
-      <p>
-        搭建各类移动端通用组件
-      </p>
+      <p>提示类</p>
+      <p>Loading</p>
+      <p>Toast</p>
+      <p>MessageBox</p>
   </div>
 </template>
 
