@@ -12,9 +12,9 @@
     
     - 功能类
         - [ ] Swiper
-        - [ ] Refresh （下拉刷新）
-        - [ ] LoadMore（加载更多）
-        - [ ] qrcode（生成二维码，包括img格式和canvas）
+        - [ ] Refresh  -- 下拉刷新
+        - [ ] LoadMore -- 加载更多
+        - [ ] qrcode   -- 二维码
         
     - 布局类
         - [ ] Tabbar
@@ -27,11 +27,11 @@
         - [ ] Switch
         - [ ] Radio
         - [ ] Checkbox
-        - [ ] F-number  （加减计数）
+        - [ ] F-number  -- 加减计数
         
     - 自定义功能弹窗
-        - [ ] Popup-date   （选择日期）
-        - [ ] Popup-area   （选择省市区）
+        - [ ] Popup-date  -- 选择日期
+        - [ ] Popup-area  -- 选择省市区
 
 
 
