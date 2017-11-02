@@ -15,7 +15,7 @@
         - [ ] Refresh （下拉刷新）
         - [ ] LoadMore（加载更多）
         - [ ] qrcode（生成二维码，包括img格式和canvas）
-        - 
+        
     - 布局类
         - [ ] Tabbar
         - [ ] Navbar
