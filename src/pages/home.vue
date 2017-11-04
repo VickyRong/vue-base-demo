@@ -18,7 +18,7 @@
       <div class="g-pl">
         <router-link to="">Tabbar</router-link>
         <router-link to="">Navbar</router-link>
-        <router-link to="">Cell</router-link>
+        <router-link to="/cell">Cell</router-link>
         <router-link to="">Panel</router-link>
         <router-link to="">Button</router-link>
       </div>
