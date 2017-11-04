@@ -1,6 +1,7 @@
-import App from '../App.vue';
-import Home from '../pages/Home.vue';
-import Cell from '../components/cell.vue';
+import App from '../App';
+import Home from '../pages/Home';
+import Cell from '../components/cell';
+import cellDemo from '../pages/demo/cellDemo';
 
 export default [
     {
@@ -9,6 +10,9 @@ export default [
         children: [     // 二级路由。对应App.vue
             { path:'/',component:Home },
             { path:'/cell',component:Cell },
+
+            //demo
+            { path:'/demo/cell',component:cellDemo },
             
         ]
     }

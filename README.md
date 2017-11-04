@@ -19,7 +19,7 @@
     - 布局类
         - [ ] Tabbar
         - [ ] Navbar
-        - [ ] Cell
+        - [x] Cell
         - [ ] Panel
         - [ ] Button
         

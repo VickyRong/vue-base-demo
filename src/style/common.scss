@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import 'color';
 @import 'mixin.scss';
 @import 'font';
 
@@ -242,10 +243,12 @@ html {
   body {
     font-size: rem(28);
   }
-  
+
   .g-wrap {
     height: 100%;
     overflow: auto;
+    font-size: rem(28);
+    color:#666;
   }
 
 /* font-size */
@@ -309,9 +312,30 @@ html {
     font-size: rem(40);
   }
 
-/* layout */
+/* 边框 */
+.s-bdr-t {
+  border-top: 1px solid $c-bdr;
+}
 
-.g-oh {
+.s-bdr-tb {
+  border-top: 1px solid $c-bdr;
+  border-bottom: 1px solid $c-bdr;
+}
+
+.s-bdr-r {
+  border-right: 1px solid $c-bdr;
+}
+
+.s-bdr-b {
+  border-bottom: 1px solid $c-bdr;
+}
+
+.s-bdr-l {
+  border-left: 1px solid $c-bdr;
+}  
+
+/* layout */
+ .g-oh {
     overflow: hidden;
   }
   
@@ -844,10 +868,10 @@ html {
     padding-left: rem(70);
   }
 
-   /* flex 布局*/
-    .g-flex {
-        @include flexbox();
-    }
+  /* flex 布局*/
+  .g-flex {
+    @include flexbox();
+  }
   
   /**垂直flex**/
   .g-v-flex {
@@ -891,4 +915,17 @@ html {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   word-break: break-all;
+}
+
+/* demo通用样式 */
+.demo-title{
+  padding: rem(50 0 0 50);
+  margin-bottom: rem(50);
+}
+
+.demo-info{
+  padding:rem(30);
+  border-radius: rem(5);
+  background-color: $c-gy7;
+  margin-bottom: rem(50);
 }
