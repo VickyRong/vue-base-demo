@@ -19,9 +19,11 @@ $c-ye3:#FEFFEA;
 $c-pk1:#FC5C9C;
 $c-pk2:#FCCDE2;
 $c-pk3:#FCEFEE;
-$c-gn1:#388E3C;
-$c-gn2:#8BC34A;
-$c-gn3:#DDEEDF;
+$c-gn1:#36495e;
+$c-gn2:#388E3C;
+$c-gn3:#4fc08d;
+$c-gn4:#8BC34A;
+$c-gn5:#DDEEDF;
 $c-bdr:#eee;
 
 /* font-color */
@@ -63,4 +65,31 @@ $c-bdr:#eee;
   }
   .s-fc-ye2{
     color:$c-ye2;
+  }
+  .s-fc-ye3{
+    color:$c-ye3;
+  }
+  .s-fc-pk1{
+    color:$c-pk1;
+  }
+  .s-fc-pk2{
+    color:$c-pk2;
+  }
+  .s-fc-pk3{
+    color:$c-pk3;
+  }
+  .s-fc-gn1{
+    color:$c-gn1;
+  }
+  .s-fc-gn2{
+    color:$c-gn2;
+  }
+  .s-fc-gn3{
+    color:$c-gn3;
+  }
+  .s-fc-gn4{
+    color:$c-gn4;
+  }
+  .s-fc-gn5{
+    color:$c-gn5;
   }

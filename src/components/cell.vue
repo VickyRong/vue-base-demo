@@ -1,3 +1,6 @@
+<!--
+ Cell组件
+create by VickyRong on 2017/11/04. -->
 <template>
   <div class="ui-cell s-fs30 s-bdr-b g-flex g-flex-v-center">
     <div class="g-flex-c1">
@@ -27,7 +30,7 @@ export default {
       type:String,
       default:""
     },
-    //icon颜色
+    //icon颜色 接受16进值色值和类名
     iconColor: {
       type:String,
       default:""

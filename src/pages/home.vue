@@ -13,13 +13,13 @@
         <router-link to="">Swiper</router-link>
         <router-link to="">Refresh （下拉刷新）</router-link>
         <router-link to="">LoadMore（加载更多）</router-link>
-        <router-link to="">qrcode（生成二维码，包括img格式和canvas）</router-link>
+        <router-link to="">Qrcode（生成二维码，包括img格式和canvas）</router-link>
       </div>
       <h4>三.布局类</h4>
       <div class="g-pl">
-        <router-link to="">Tabbar</router-link>
+        <router-link to="/demo/tabBar"><i class="iconfont icon-tab s-fs32 s-fc-gn3 g-mr10"></i>Tabbar</router-link>
         <router-link to="">Navbar</router-link>
-        <router-link to="/demo/cell"><i class="iconfont icon-cell s-fs30 s-fc-bu3 g-mr10"></i>Cell</router-link>
+        <router-link to="/demo/cell"><i class="iconfont icon-cell s-fs32 s-fc-gn3 g-mr10"></i>Cell</router-link>
         <router-link to="">Panel</router-link>
         <router-link to="">Button</router-link>
       </div>
@@ -28,7 +28,7 @@
         <router-link to="">Switch</router-link>
         <router-link to="">Radio</router-link>
         <router-link to="">Checkbox</router-link>
-        <router-link to="">F-number</router-link>
+        <router-link to="">V-number</router-link>
       </div>
       <h4>五.自定义功能弹窗</h4>
       <div class="g-pl">
@@ -50,7 +50,7 @@ export default {
 <style lang="scss" scoped>
 @import 'src/style/common';
   .g-wrap{
-    background-color: #586B8F;
+    background-color: #36495e;
     .content{
       background-color: #F9F9F9;
       border-radius:rem(10); 

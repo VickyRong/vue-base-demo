@@ -27,7 +27,7 @@
         - [ ] Switch
         - [ ] Radio
         - [ ] Checkbox
-        - [ ] F-number  -- 加减计数
+        - [ ] V-number  -- 加减计数
         
     - 自定义功能弹窗
         - [ ] Popup-date  -- 选择日期

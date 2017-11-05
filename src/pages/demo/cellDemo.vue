@@ -7,12 +7,12 @@
     </div>
     <!--描述-->
     <div class="demo-info">
-      <p>项目条可自由配置是否需要icon和箭头和其颜色。</p>
+      <p>项目条可配置icon、箭头、颜色。</p>
     </div>
     <!--组件-->
     <Cell content="项目名"></Cell>
     <Cell content="项目名" icon="icon-cell" arrow></Cell>
-    <Cell content="项目名" color="#FCCDE2" icon="icon-cell" iconColor="#FC5C9C" arrow></Cell>
+    <Cell content="项目名" color="#4fc08d" icon="icon-cell" iconColor="#4fc08d" arrow="true"></Cell>
   </div>
 </template>
 
