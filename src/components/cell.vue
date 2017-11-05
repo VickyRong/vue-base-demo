@@ -36,8 +36,7 @@ export default {
       default:""
     },
     //箭头
-    arrow:false
-    
+    arrow:false,
  }
 }
 </script>

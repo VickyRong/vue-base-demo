@@ -14,10 +14,15 @@ export default {
   props: {
     //选项卡内容
     tabList: Array,
-    tabIndex:0
+  },
+  data(){
+    return{
+      tabIndex:0
+    }
   },
   methods:{
     changeTab(index){
+      this.tabIndex = index;
       this.$emit("changeTab",index);
     }
   }
@@ -28,8 +33,9 @@ export default {
 @import 'src/style/common';
   .ui-tabBar{
     li{
-      padding:rem(20 0);
-      margin: rem(0 50);
+      span{
+        padding:rem(20 30);
+      }
        .active{
         color:$c-gn3;
         border-bottom: 2px solid $c-gn3;

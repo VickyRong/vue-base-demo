@@ -7,10 +7,11 @@
     </div>
     <!--描述-->
     <div class="demo-info">
-      <p>可配置高亮条颜色、选项卡内容、获取tabIndex。</p>
+      <p>可配置高亮条颜色、选项卡内容、获取索引值。</p>
     </div>
     <!--组件-->
     <TabBar :tabList="tabData" @changeTab="changeTab"></TabBar>
+    <p class="g-mt50">索引值: {{ tabIndex }}</p>
   </div>
 </template>
 
@@ -22,12 +23,14 @@ export default {
   },
   data() {
     return{
-      tabData:['选项一','选项二','选项三']
+      tabData:['选项一','选项二','选项三'],
+      tabIndex:0
     }
   },
   methods:{
    changeTab(index){
      console.log(index);
+     this.$set(this,"tabIndex",index);
    }
   }
 }
