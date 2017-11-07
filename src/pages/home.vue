@@ -18,7 +18,7 @@
       <h4>三.布局类</h4>
       <div class="g-pl">
         <router-link to="/demo/tabBar"><Cell content="Tabbar" icon="icon-tab s-fc-gn3" arrow></Cell></router-link>
-        <router-link to=""><Cell content="Navbar" icon=""></Cell></router-link>
+        <router-link to="/demo/navBar"><Cell content="Navbar" icon="icon-nav-bar s-fc-gn3" arrow></Cell></router-link>
         <router-link to="/demo/cell"><Cell content="Cell" icon="icon-cell s-fc-gn3" arrow></Cell></router-link>
         <router-link to=""><Cell content="Panel" icon=""></Cell></router-link>
         <router-link to=""><Cell content="Button" icon=""></Cell></router-link>

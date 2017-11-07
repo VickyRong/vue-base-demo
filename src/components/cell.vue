@@ -18,7 +18,7 @@ export default {
     //cell内容
     content: {
       type:String,
-      default:"cell组件"
+      default:""
     },
     //cell颜色
     color: {

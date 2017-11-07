@@ -17,8 +17,8 @@
         - [ ] qrcode   -- 二维码
         
     - 布局类
-        - [ ] Tabbar
-        - [x] Navbar
+        - [x] Tabbar
+        - [ ] Navbar
         - [x] Cell
         - [ ] Panel
         - [ ] Button
