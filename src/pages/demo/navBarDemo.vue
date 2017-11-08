@@ -7,13 +7,20 @@
     </div>
     <!--描述-->
     <div class="demo-info">
-      <p>可配置导航条、内容、获取索引值。</p>
+      <p>可配置导航条icon选中颜色、内容、获取索引值。</p>
     </div>
     <!--组件-->
-    <NavBar>
-      <TabItem icon="icon-home">首页</TabItem>
-      <TabItem icon="icon-pic">图集</TabItem>
-      <TabItem icon="icon-my">我的</TabItem>
+      <p>{{"导航一选中: "+ checked}}</p>
+    <NavBar v-model="checked" activeColor="s-fc-pk1" isFixed = "false">
+      <TabItem icon="icon-home" id="1">首页</TabItem>
+      <TabItem icon="icon-pic" id="2">图集</TabItem>
+      <TabItem icon="icon-my" id="3">我的</TabItem>
+    </NavBar>
+    <p>{{"导航二选中: "+ select}}</p>
+    <NavBar v-model="select" activeColor="s-fc-gn3">
+      <TabItem icon="icon-home" id="1">首页</TabItem>
+      <TabItem icon="icon-pic" id="2">图集</TabItem>
+      <TabItem icon="icon-my" id="3">我的</TabItem>
     </NavBar>
   </div>
 </template>
@@ -27,13 +34,11 @@ export default {
   },
   data() {
     return{
-      tabIndex:0
+      checked:1,
+      select:2
     }
   },
   methods:{
-   changeTab(index){
-     this.$set(this,"tabIndex",index);
-   }
   }
 }
 </script>

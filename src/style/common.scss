@@ -250,6 +250,34 @@ html {
     font-size: rem(28);
     color:#666;
   }
+/* function */
+.f-pos-a {
+  position: absolute;
+}
+
+.f-pos-r {
+  position: relative;
+}
+
+.f-dis-b {
+  display: block;
+}
+
+.f-dis-ib {
+  display: inline-block;
+}
+
+.f-vat {
+  vertical-align: top;
+}
+
+.f-vam {
+  vertical-align: middle;
+}
+
+.f-vab {
+  vertical-align: bottom;
+}
 
 /* font-size */
   .s-fs12 {

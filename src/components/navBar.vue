@@ -2,7 +2,7 @@
  navBar组件
 create by VickyRong on 2017/11/07. -->
 <template>
-    <div class="ui-navBar g-flex g-flex-v-center g-flex-center is-fixed">
+    <div :class="isFixed == 'false' ? '' : 'is-fixed'" class="ui-navBar g-flex g-flex-v-center g-flex-center">
       <slot></slot>
     </div>
 </template>
@@ -11,18 +11,13 @@ create by VickyRong on 2017/11/07. -->
 export default {
   name: 'navBar',
   props: {
-    //选项卡内容
-    tabList: Array,
+    value: {},
+    activeColor:"",
+    isFixed:""
   },
   data(){
     return{
-      tabIndex:0
-    }
-  },
-  methods:{
-    changeTab(index){
-      this.tabIndex = index;
-      this.$emit("changeTab",index);
+      // isFixed:false
     }
   }
 }
@@ -31,22 +26,13 @@ export default {
 <style lang="scss" scoped>
 @import 'src/style/common';
   .ui-navBar{
-    li{
-      span{
-        padding:rem(20 30);
-      }
-      .active{
-        color:$c-gn3;
-        border-bottom: 2px solid $c-gn3;
-      }
-    }
+    padding: rem(10 0);
   }
   .is-fixed{
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    height: rem(90);
     border-top:1px solid $c-gy6;
   }
 </style>
