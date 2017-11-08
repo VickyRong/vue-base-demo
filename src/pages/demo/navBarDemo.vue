@@ -11,22 +11,22 @@
     </div>
     <!--组件-->
       <p>{{"导航一选中: "+ checked}}</p>
-    <NavBar v-model="checked" activeColor="s-fc-pk1" isFixed = "false">
-      <TabItem icon="icon-home" id="1">首页</TabItem>
-      <TabItem icon="icon-pic" id="2">图集</TabItem>
-      <TabItem icon="icon-my" id="3">我的</TabItem>
-    </NavBar>
+    <nav-bar v-model="checked" activeColor="s-fc-pk1" isFixed = "false">
+      <tab-item icon="icon-home" id="1">首页</tab-item>
+      <tab-item icon="icon-pic" id="2">图集</tab-item>
+      <tab-item icon="icon-my" id="3">我的</tab-item>
+    </nav-bar>
     <p>{{"导航二选中: "+ select}}</p>
-    <NavBar v-model="select" activeColor="s-fc-gn3">
-      <TabItem icon="icon-home" id="1">首页</TabItem>
-      <TabItem icon="icon-pic" id="2">图集</TabItem>
-      <TabItem icon="icon-my" id="3">我的</TabItem>
-    </NavBar>
+    <nav-bar v-model="select" activeColor="s-fc-gn3">
+      <tab-item icon="icon-home" id="1">首页</tab-item>
+      <tab-item icon="icon-pic" id="2">图集</tab-item>
+      <tab-item icon="icon-my" id="3">我的</tab-item>
+    </nav-bar>
   </div>
 </template>
 
 <script>
-import NavBar from '../../components/NavBar';
+import NavBar from '../../components/navBar';
 import TabItem from '../../components/tabItem';
 export default {
   components:{

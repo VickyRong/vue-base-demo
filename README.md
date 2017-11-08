@@ -14,11 +14,12 @@
         - [ ] Swiper
         - [ ] Refresh  -- 下拉刷新
         - [ ] LoadMore -- 加载更多
-        - [ ] qrcode   -- 二维码
+        - [ ] Qrcode   -- 二维码
+        - [ ] Map      -- 地图组件
         
     - 布局类
         - [x] Tabbar
-        - [ ] Navbar
+        - [x] Navbar
         - [x] Cell
         - [ ] Panel
         - [ ] Button

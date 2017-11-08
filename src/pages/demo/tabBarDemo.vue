@@ -10,7 +10,7 @@
       <p>可配置高亮条颜色、选项卡内容、获取索引值。</p>
     </div>
     <!--组件-->
-    <TabBar :tabList="tabData" @changeTab="changeTab"></TabBar>
+    <tab-bar :tabList="tabData" @changeTab="changeTab"></tab-bar>
     <p class="g-mt50">索引值: {{ tabIndex }}</p>
   </div>
 </template>

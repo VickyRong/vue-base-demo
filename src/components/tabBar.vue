@@ -11,7 +11,7 @@ create by VickyRong on 2017/11/05. -->
 
 <script>
 export default {
-  name: 'tabBar',
+  name: 'tab-bar',
   props: {
     //选项卡内容
     tabList: Array,

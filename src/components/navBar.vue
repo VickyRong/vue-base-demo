@@ -9,15 +9,14 @@ create by VickyRong on 2017/11/07. -->
 
 <script>
 export default {
-  name: 'navBar',
+  name: 'nav-bar',
   props: {
-    value: {},
+    value: "",
     activeColor:"",
     isFixed:""
   },
   data(){
     return{
-      // isFixed:false
     }
   }
 }
