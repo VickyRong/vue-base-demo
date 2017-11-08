@@ -3,6 +3,7 @@ import Home from '../pages/Home';
 import cellDemo from '../pages/demo/cellDemo';
 import tabBarDemo from '../pages/demo/tabBarDemo';
 import navBarDemo from '../pages/demo/navBarDemo';
+import buttonDemo from '../pages/demo/buttonDemo';
 
 export default [
     {
@@ -16,6 +17,7 @@ export default [
             { path:'/demo/cell',component:cellDemo },
             { path:'/demo/tabBar',component:tabBarDemo },
             { path:'/demo/navBar',component:navBarDemo },
+            { path:'/demo/button',component:buttonDemo },
             
         ]
     }

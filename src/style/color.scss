@@ -26,6 +26,13 @@ $c-gn4:#8BC34A;
 $c-gn5:#DDEEDF;
 $c-bdr:#eee;
 
+$c-gnwx1:#1AAD19;
+$c-gnwx2:#179B16;
+$c-gnwx3:#9ED99D;
+$c-redwx1:#E64340;
+$c-redwx2:#CE3C39;
+$c-redwx3:#EC8B89;
+
 /* font-color */
  .s-fc-w{
     color:$c-w;
@@ -92,4 +99,33 @@ $c-bdr:#eee;
   }
   .s-fc-gn5{
     color:$c-gn5;
+  }
+
+
+  /* bg-color */
+  .s-bg-w{
+    color: $c-w;
+  }
+  .s-bg-gnwx1{
+    background-color:$c-gnwx1;
+  }
+  .s-bg-gnwx2{
+    background-color:$c-gnwx2;
+  }
+  .s-bg-gnwx3{
+    background-color:$c-gnwx3;
+  }
+  .s-bg-redwx1{
+    background-color:$c-redwx1;
+  }
+  .s-bg-redwx2{
+    background-color:$c-redwx2;
+  }
+  .s-bg-redwx3{
+    background-color:$c-redwx3;
+  }
+
+   /* bdr-color */
+  .s-bdr-gnwx1{
+    border: 1px solid $c-gnwx1;
   }
