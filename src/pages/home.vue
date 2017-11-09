@@ -20,7 +20,6 @@
         <router-link to="/demo/tabBar"><Cell content="Tabbar" icon="icon-tab s-fc-gn3" arrow></Cell></router-link>
         <router-link to="/demo/navBar"><Cell content="Navbar" icon="icon-nav-bar s-fc-gn3" arrow></Cell></router-link>
         <router-link to="/demo/cell"><Cell content="Cell" icon="icon-cell s-fc-gn3" arrow></Cell></router-link>
-        <router-link to=""><Cell content="Panel" icon=""></Cell></router-link>
         <router-link to="/demo/button"><Cell content="Button" icon="icon-button s-fc-gn3 s-fs32" arrow></Cell></router-link>
       </div>
       <h4>四.表单类</h4>

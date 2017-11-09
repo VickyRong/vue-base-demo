@@ -2,80 +2,104 @@
  Button组件
 create by VickyRong on 2017/11/08. -->
 <template>
-  <div :class="bgColor" :style="{'border':'1px solid '+ bdrColor +''}" class="ui-button g-flex g-flex-center g-flex-v-center">
-     <i v-if="loading !== false && loading !=='false'" class="iconfont icon-loading s-fs36 g-mr10"></i>
+  <div :class="classType" class="ui-button g-flex g-flex-center g-flex-v-center">
+    <i v-if="loading !== false && loading!== 'false'" class="iconfont icon-loading s-fs30 g-mr10"></i>
      <slot></slot>   
   </div>
 </template>
 
 <script>
 export default {
-  name: 'button',
-  props:{
+  name: "v-button",
+  props: {
     //按钮文案
-    content:{
-      type:[Number,String],
-      default:''
+    content: {
+      type: [Number, String],
+      default: ""
     },
+    //颜色类型
+    type: String,
     //禁用
-    disabled:Boolean,
+    disabled: Boolean,
     //警告
-    warn:Boolean,
-    //镂空
-    plain:Boolean,
+    warn: Boolean,
+    //幽灵按钮
+    plain: Boolean,
     //loading
-    loading:[Boolean,String]
- },
- data(){
-   return {
-      bgColor:'',
-      bdrColor:''
-   }
- },
-computed: {
-   
+    loading: Boolean,
+    //尺寸
+    size: String
   },
- created(){
-   //背景色判断
-    if(this.warn !== false && this.warn !== 'false'){
-      //警告红色
-      this.$set(this,'bgColor','s-bg-redwx1');
-      
-      if(this.loading !== false && this.loading !== 'false'){
-        this.$set(this,'bgColor','s-bg-redwx2 s-opa6');
-      }
-      if(this.disabled !== false && this.disabled !== 'false'){
-        this.$set(this,'bgColor','s-bg-redwx3 s-opa6');
-      }
-    }else{
-      //默认绿色
-      this.$set(this,'bgColor','s-bg-gnwx1');
-
-      if(this.loading !== false && this.loading !== 'false'){
-        this.$set(this,'bgColor','s-bg-gnwx2 s-opa6');
-      }
-      if(this.disabled !== false && this.disabled !== 'false'){
-        this.$set(this,'bgColor','s-bg-gnwx3 s-opa6');
-      }
-      if(this.plain !== false && this.plain !== 'false'){
-        this.$set(this,'bgColor','s-bg-w');
-        this.$set(this,'bdrColor','s-bg-w');
-      }
+  data() {
+    return {};
+  },
+  computed: {
+    classType() {
+      return [
+        {
+          'ui-button-loading':this.loading,
+          'ui-button-disabled':this.disabled,
+        },
+        `ui-button-${this.type}`,
+        `ui-button-${this.size}`,
+        this.plain ? `ui-button-plain-${this.type}`:''
+      ];
     }
- }
-}
+  },
+};
 </script>
 
 <style lang="scss" scoped>
-@import 'src/style/common';
-  .ui-button{
-    height: rem(92);
-    border-radius: rem(10);
-    color:$c-w;
-    font-size: rem(32);
-  }
-  .s-opa6{
-    color: rgba(255,255,255,.6);
-  }
+@import "src/style/common";
+.ui-button {
+  height: rem(90);
+  border-radius: rem(10);
+  font-size: rem(32);
+  margin-bottom: rem(30);
+  color: $c-gy3;
+  background-color: $c-w;
+  border: 1px solid $c-gy3;
+}
+
+.ui-button-primary {
+  color: $c-w;
+  background-color: $c-gnwx1;
+  border: 1px solid $c-gnwx1;
+}
+.ui-button-danger {
+  color: $c-w;
+  background-color: $c-redwx1;
+  border: 1px solid $c-redwx1;
+}
+
+.ui-button-plain-primary {
+  color: $c-gnwx1;
+  background-color: transparent;
+  border: 1px solid $c-gnwx1;
+}
+
+.ui-button-plain-danger {
+  color: $c-redwx1;
+  background-color: transparent;
+  border: 1px solid $c-redwx1;
+}
+
+.ui-button-middle{
+  width: rem(360);
+  height: rem(90);
+}
+
+.ui-button-small{
+  width: rem(180);
+  height: rem(70);
+}
+
+.ui-button-loading {
+  opacity: .8;
+}
+
+.ui-button-disabled {
+  opacity: .6;
+}
 
 </style>

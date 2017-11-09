@@ -3,7 +3,7 @@ import Home from '../pages/Home';
 import cellDemo from '../pages/demo/cellDemo';
 import tabBarDemo from '../pages/demo/tabBarDemo';
 import navBarDemo from '../pages/demo/navBarDemo';
-import buttonDemo from '../pages/demo/buttonDemo';
+import buttonDemo from '../pages/demo/vButtonDemo';
 
 export default [
     {

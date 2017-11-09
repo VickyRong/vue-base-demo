@@ -434,7 +434,7 @@ html {
   }
   
   .g-mt10 {
-    margin-top: rem(10);
+    margin-top: 10px;
   }
   
   .g-mt15 {
@@ -490,7 +490,7 @@ html {
   }
   
   .g-mr10 {
-    margin-right: rem(10);
+    margin-right: 10px;
   }
   
   .g-mr15 {
@@ -538,7 +538,7 @@ html {
   }
   
   .g-mb10 {
-    margin-bottom: rem(10);
+    margin-bottom: 10px;
   }
   
   .g-mb15 {
@@ -594,7 +594,7 @@ html {
   }
   
   .g-ml10 {
-    margin-left: rem(10);
+    margin-left: 10px;
   }
   
   .g-ml15 {
@@ -689,7 +689,7 @@ html {
   }
   
   .g-pt10 {
-    padding-top: rem(10);
+    padding-top: 10px;
   }
   
   .g-pt15 {
@@ -745,7 +745,7 @@ html {
   }
   
   .g-pr10 {
-    padding-right: rem(10);
+    padding-right: 10px;
   }
   
   .g-pr15 {
@@ -797,7 +797,7 @@ html {
   }
   
   .g-pb10 {
-    padding-bottom: rem(10);
+    padding-bottom: 10px;
   }
   
   .g-pb15 {
@@ -853,7 +853,7 @@ html {
   }
   
   .g-pl10 {
-    padding-left: rem(10);
+    padding-left: 10px;
   }
   
   .g-pl15 {
@@ -946,14 +946,52 @@ html {
 }
 
 /* demo通用样式 */
-.demo-title{
-  padding: rem(50 0 0 50);
-  margin-bottom: rem(50);
+//头部
+.demo-header{
+  padding: rem(60 30 0 30);
+  margin-bottom: rem(100);
 }
 
+//组件信息
+.demo-des{
+  position: relative;
+  padding: rem(20 20 20 55);
+  box-shadow: 0px 2px 20px #e8e8e8;
+  border-radius: 5px;
+  padding-left: rem(80);
+  color:$c-gy2;
+  font-size: rem(30);
+  margin: rem(30 0);
+  &:before{
+    position: absolute;
+    left: rem(20);
+    top: 50%;
+    margin-top: rem(-20);
+    content: '';
+    width: rem(0);
+    height: rem(0);
+    border:40px solid $c-pk1;
+    border-top:10px solid $c-pk1;
+    border-right:10px solid $c-pk2;
+    border-bottom:10px solid $c-pk3;
+    border-left:10px solid $c-bu3;
+  }
+}
+
+//标题
+.demo-tt{
+  font-size: rem(30);
+  height: rem(50);
+  line-height: rem(50);
+  border-left:4px solid $c-gy3;
+  padding-left: rem(20);
+  color: $c-gy3;
+}
+
+//描述信息
 .demo-info{
-  padding:rem(30);
+  color:$c-gy3;
+  padding:rem(15 30);
   border-radius: rem(5);
   background-color: $c-gy7;
-  margin-bottom: rem(50);
 }

@@ -21,8 +21,7 @@
         - [x] Tabbar
         - [x] Navbar
         - [x] Cell
-        - [ ] Panel
-        - [ ] Button
+        - [x] Button
         
     - 表单类  
         - [ ] Switch

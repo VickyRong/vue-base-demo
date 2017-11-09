@@ -1,17 +1,16 @@
 <template>
   <div class="g-wrap">
-    <!--标题-->
-    <div class="demo-title">
+    <!--头部-->
+    <div class="demo-header">
       <h2>TabBar</h2>
-      <p class="s-fc-gy3 g-mt10">选项卡切换条</p>
+      <p class="s-fc-gy3 g-mt10">选项卡切换条</p> 
+      <p class="demo-des">可配置高亮条颜色、文案、获取索引值。</p>
     </div>
-    <!--描述-->
-    <div class="demo-info">
-      <p>可配置高亮条颜色、选项卡内容、获取索引值。</p>
-    </div>
+
     <!--组件-->
+    <div class="demo-tt g-mb">基础用法</div>
     <tab-bar :tabList="tabData" @changeTab="changeTab"></tab-bar>
-    <p class="g-mt50">索引值: {{ tabIndex }}</p>
+    <div class="demo-info g-mt50">索引值: {{ tabIndex }}</div>
   </div>
 </template>
 
@@ -29,7 +28,6 @@ export default {
   },
   methods:{
    changeTab(index){
-     console.log(index);
      this.$set(this,"tabIndex",index);
    }
   }

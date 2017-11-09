@@ -1,15 +1,14 @@
 <template>
   <div class="g-wrap">
-    <!--标题-->
-    <div class="demo-title">
+    <!--头部-->
+    <div class="demo-header">
       <h2>Cell</h2>
-      <p class="s-fc-gy3 g-mt10">项目条</p>
+      <p class="s-fc-gy3 g-mt10">项目条</p> 
+      <p class="demo-des">项目条可配置icon、箭头、颜色。</p>
     </div>
-    <!--描述-->
-    <div class="demo-info">
-      <p>项目条可配置icon、箭头、颜色。</p>
-    </div>
+
     <!--组件-->
+    <div class="demo-tt g-mb">基础用法</div>
     <cell content="项目名"></cell>
     <cell content="项目名" icon="icon-cell" arrow></cell>
     <cell content="项目名" color="#4fc08d" icon="icon-cell" iconColor="#4fc08d" arrow="true"></cell>
