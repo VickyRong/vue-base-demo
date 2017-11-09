@@ -6,9 +6,9 @@
 - [ ] 目录页 
 - [ ] 通用组件
     - 提示类
-    - [ ] Loading
-    - [ ] Toast
-    - [ ] MessageBox
+        - [ ] Loading
+        - [ ] Toast
+        - [ ] MessageBox
     
     - 功能类
         - [ ] Swiper
