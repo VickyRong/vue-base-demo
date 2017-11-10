@@ -18,7 +18,7 @@
 
     <div class="demo-tt g-mt50 g-mb">导航二</div>
     <div class="demo-info">{{"索引值: "+ select}}</div>
-    <nav-bar v-model="select" activeColor="s-fc-gn3">
+    <nav-bar v-model="select" activeColor="s-fc-bu2">
       <tab-item icon="icon-home" id="1">首页</tab-item>
       <tab-item icon="icon-pic" id="2">图集</tab-item>
       <tab-item icon="icon-my" id="3">我的</tab-item>

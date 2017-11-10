@@ -38,8 +38,8 @@ export default {
         padding:rem(20 30);
       }
        .active{
-        color:$c-gn3;
-        border-bottom: 2px solid $c-gn3;
+        color:$c-pk1;
+        border-bottom: 2px solid $c-pk1;
       }
     }
    

@@ -11,7 +11,7 @@
     <div class="demo-tt g-mb">基础用法</div>
     <cell content="项目名"></cell>
     <cell content="项目名" icon="icon-cell" arrow></cell>
-    <cell content="项目名" color="#4fc08d" icon="icon-cell" iconColor="#4fc08d" arrow="true"></cell>
+    <cell content="项目名" color="#FC5C9C" icon="icon-cell" iconColor="#FC5C9C" arrow="true"></cell>
   </div>
 </template>
 

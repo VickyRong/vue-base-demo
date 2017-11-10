@@ -39,4 +39,5 @@ export default {
 .g-wrap{
   padding: rem(30);
 }
+
 </style>

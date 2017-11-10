@@ -3,7 +3,7 @@
 create by VickyRong on 2017/11/09. -->
 <template>
   <label  class="ui-switch"> <!--务必使用label 点圆按钮的时候也可以选中-->
-    <input type="checkbox" :checked="checked" :disabled="disabled" class="ui-switch-input">
+    <input type="checkbox" :checked="value" :disabled="disabled" class="ui-switch-input">
     <span @click="changeSelect" class="ui-switch-box"></span>
   </label>
 </template>
@@ -13,14 +13,12 @@ export default {
   name: 'switch',
   props:{
     //选中的值
-    value:{},
-    //禁用
-    disabled:{
+    value:{
       type:Boolean,
       default:false
     },
-    //默认是否选中
-    checked:{
+    //禁用
+    disabled:{
       type:Boolean,
       default:false
     },
@@ -87,7 +85,6 @@ export default {
         position: absolute;
         width: rem(100);
         height: rem(60);
-        // border:1px solid $c-gy5;
         background-color:$c-w; 
         border-radius:rem(30);
         transition:all .3s, -webkit-transform .3s;

@@ -1,8 +1,8 @@
+
 @charset "UTF-8";
 @import 'color';
 @import 'mixin.scss';
 @import 'font';
-
 $g-mgn:rem(30);
 
 html {
@@ -243,7 +243,7 @@ html {
   body {
     font-size: rem(28);
   }
-
+  
   .g-wrap {
     height: 100%;
     overflow: auto;
@@ -974,7 +974,7 @@ html {
     border-top:10px solid $c-pk1;
     border-right:10px solid $c-pk2;
     border-bottom:10px solid $c-pk3;
-    border-left:10px solid $c-bu3;
+    border-left:10px solid $c-bu4;
   }
 }
 

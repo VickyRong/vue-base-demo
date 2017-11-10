@@ -4,14 +4,14 @@
         <h3 class="g-tac">目录页</h3>
       <h4>一.布局类</h4>
       <div class="g-pl">
-        <router-link to="/demo/tabBar"><Cell content="Tabbar" icon="icon-tab s-fc-gn3 s-fs36" arrow></Cell></router-link>
-        <router-link to="/demo/navBar"><Cell content="Navbar" icon="icon-nav-bar s-fc-gn3 s-fs36" arrow></Cell></router-link>
-        <router-link to="/demo/cell"><Cell content="Cell" icon="icon-cell s-fc-gn3 s-fs36" arrow></Cell></router-link>
-        <router-link to="/demo/button"><Cell content="Button" icon="icon-button s-fc-gn3 s-fs36" arrow></Cell></router-link>
+        <router-link to="/demo/tabBar"><Cell content="Tabbar" icon="icon-tab s-fc-pk1 s-fs36" arrow></Cell></router-link>
+        <router-link to="/demo/navBar"><Cell content="Navbar" icon="icon-nav-bar s-fc-pk1 s-fs36" arrow></Cell></router-link>
+        <router-link to="/demo/cell"><Cell content="Cell" icon="icon-cell s-fc-pk1 s-fs36" arrow></Cell></router-link>
+        <router-link to="/demo/button"><Cell content="Button" icon="icon-button s-fc-pk1 s-fs36" arrow></Cell></router-link>
       </div>
       <h4>二.表单类</h4>
       <div class="g-pl">
-        <router-link to="/demo/switch"><Cell content="Switch" icon="icon-switch s-fc-gn3 s-fs28" arrow></Cell></router-link>
+        <router-link to="/demo/switch"><Cell content="Switch" icon="icon-switch s-fc-pk1 s-fs28" arrow></Cell></router-link>
         <router-link to=""><Cell content="Radio" icon=""></Cell></router-link>
         <router-link to=""><Cell content="Checkbox" icon=""></Cell></router-link>
         <router-link to=""><Cell content="V-number" icon=""></Cell></router-link>
@@ -50,7 +50,7 @@ export default {
 <style lang="scss" scoped>
 @import 'src/style/common';
   .g-wrap{
-    background-color: #36495e;
+    background-color:$c-bu1;
     .content{
       background-color: #F9F9F9;
       border-radius:rem(10); 
