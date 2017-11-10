@@ -15,7 +15,7 @@
     </div>
 
     <div class="demo-tt g-mt50 g-mb">默认开启</div>
-    <v-switch v-model="checked2" checked></v-switch>
+    <v-switch v-model="checked2" color="#f40" checked></v-switch>
     <div class="demo-info g-mt">
       状态：{{checked2}}
     </div>

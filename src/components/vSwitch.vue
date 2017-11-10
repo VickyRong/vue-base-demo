@@ -4,7 +4,7 @@ create by VickyRong on 2017/11/09. -->
 <template>
   <label  class="ui-switch"> <!--务必使用label 点圆按钮的时候也可以选中-->
     <input type="checkbox" :checked="checked" :disabled="disabled" class="ui-switch-input">
-    <span @click="changeBox" class="ui-switch-box open"></span>
+    <span @click="changeSelect" class="ui-switch-box"></span>
   </label>
 </template>
 
@@ -37,10 +37,10 @@ export default {
     }
   },
   created(){
-    console.log(this.value);
+    console.log(this.color);
   },
   methods:{
-    changeBox(){
+    changeSelect(){
       this.status = !this.value;
       this.$emit('input',this.status);
     }
@@ -59,15 +59,15 @@ export default {
     opacity: .4;
   }
 
-  .ui-switch-input:checked +.ui-switch-box::before{
+  .ui-switch-input:checked +.ui-switch-box{
     background: $c-pk1;
     border:1px solid $c-pk1;
-    transition:all .3s, -webkit-transform .3s;
-  }
-
-  .ui-switch-input:checked +.ui-switch-box::after{
-    transform: translateX(rem(42));
-    transition:all .3s, -webkit-transform .3s;
+    &:before {
+        transform: scale(0);
+    }
+    &:after {
+        transform: translateX(rem(40));
+    }
   }
 
   .ui-switch-box{
@@ -77,21 +77,24 @@ export default {
     height: rem(64);
     background-color:$c-gy5; 
     border-radius:rem(32);
+    border:1px solid $c-gy5;
+    outline: none;
     box-sizing: border-box;
-      &::before{ //控制switch元件背景颜色
+      &:before{ //控制switch元件背景颜色
         content: " ";
         top: 0;
         left: 0;
         position: absolute;
         width: rem(100);
         height: rem(60);
-        border:1px solid $c-gy5;
+        // border:1px solid $c-gy5;
         background-color:$c-w; 
-        border-radius:rem(32);
+        border-radius:rem(30);
+        transition:all .3s, -webkit-transform .3s;
       }
-      &::after{ //控制switch圆形按钮
+      &:after{ //控制switch圆形按钮
         content: " ";
-        top: rem(2);
+        top: 0;
         left: 0;
         position: absolute;
         width: rem(60);
@@ -99,6 +102,7 @@ export default {
         border-radius: 100%;
         background-color: $c-w;
         box-shadow: 0 rem(2) rem(6) rgba(0, 0, 0, .4);
+        transition:all .3s, -webkit-transform .3s;
       }
   }
 
