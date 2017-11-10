@@ -4,7 +4,7 @@
     <div class="demo-header">
       <h2>Button</h2>
       <p class="s-fc-gy3 g-mt10">按钮</p> 
-      <p class="demo-des">按钮可配置大小，颜色，圆角，边框。</p>
+      <p class="demo-des">可配置大小，颜色，圆角，边框。</p>
     </div>
    
     <!--组件-->

@@ -5,6 +5,18 @@
 
 - [ ] 目录页 
 - [ ] 通用组件
+     - 布局类
+        - [x] Tabbar
+        - [x] Navbar
+        - [x] Cell
+        - [x] Button
+        
+    - 表单类  
+        - [x] Switch
+        - [ ] Radio
+        - [ ] Checkbox
+        - [ ] V-number  -- 加减计数
+
     - 提示类
         - [ ] Loading
         - [ ] Toast
@@ -16,19 +28,7 @@
         - [ ] LoadMore -- 加载更多
         - [ ] Qrcode   -- 二维码
         - [ ] Map      -- 地图组件
-        
-    - 布局类
-        - [x] Tabbar
-        - [x] Navbar
-        - [x] Cell
-        - [x] Button
-        
-    - 表单类  
-        - [ ] Switch
-        - [ ] Radio
-        - [ ] Checkbox
-        - [ ] V-number  -- 加减计数
-        
+
     - 自定义功能弹窗
         - [ ] Popup-date  -- 选择日期
         - [ ] Popup-area  -- 选择省市区

@@ -4,7 +4,7 @@
     <div class="demo-header">
       <h2>Cell</h2>
       <p class="s-fc-gy3 g-mt10">项目条</p> 
-      <p class="demo-des">项目条可配置icon、箭头、颜色。</p>
+      <p class="demo-des">可配置icon、箭头、颜色。</p>
     </div>
 
     <!--组件-->

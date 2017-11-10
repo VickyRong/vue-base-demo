@@ -4,6 +4,7 @@ import cellDemo from '../pages/demo/cellDemo';
 import tabBarDemo from '../pages/demo/tabBarDemo';
 import navBarDemo from '../pages/demo/navBarDemo';
 import buttonDemo from '../pages/demo/vButtonDemo';
+import switchDemo from '../pages/demo/vSwitchDemo';
 
 export default [
     {
@@ -18,6 +19,7 @@ export default [
             { path:'/demo/tabBar',component:tabBarDemo },
             { path:'/demo/navBar',component:navBarDemo },
             { path:'/demo/button',component:buttonDemo },
+            { path:'/demo/switch',component:switchDemo },
             
         ]
     }
