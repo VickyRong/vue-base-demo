@@ -3,8 +3,9 @@
 create by VickyRong on 2017/11/09. -->
 <template>
   <label  class="ui-switch"> <!--务必使用label 点圆按钮的时候也可以选中-->
-    <input type="checkbox" :checked="value" :disabled="disabled" class="ui-switch-input">
-    <span @click="changeSelect" class="ui-switch-box"></span>
+    <input :checked="value" @change="changeSelect"  :disabled="disabled" class="ui-switch-input"  type="checkbox">
+    <span v-if="value" :style="{'background-color':color,'border':`1px solid ${color}`}" class="ui-switch-box"></span>
+    <span v-else class="ui-switch-box"></span>
   </label>
 </template>
 
@@ -22,25 +23,18 @@ export default {
       type:Boolean,
       default:false
     },
+    
     //按钮颜色
     color:{
       type:String,
-      default:''
+      default:'transprent'
     }
+  },
 
-  },
-  data(){
-    return {
-      status:false,
-    }
-  },
-  created(){
-    console.log(this.color);
-  },
   methods:{
-    changeSelect(){
-      this.status = !this.value;
-      this.$emit('input',this.status);
+    changeSelect(e){
+      //input中checkbox默认会带有checked属性，true或者false
+      this.$emit('input', e.target.checked);
     }
   }
 }
