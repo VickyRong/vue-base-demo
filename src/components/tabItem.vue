@@ -34,7 +34,6 @@ export default {
   methods:{
    changeTab(id){
      this.$parent.$emit('input', id);
-     console.log(this.$parent);
    }
   }
 }

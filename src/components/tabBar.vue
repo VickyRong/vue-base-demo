@@ -4,7 +4,8 @@ create by VickyRong on 2017/11/05. -->
 <template>
     <ul class="ui-tabBar g-flex">
       <li v-for="(item,index) in tabList" @click="changeTab(index)" class="g-flex-c1 g-tac">
-        <span :class="index == tabIndex?'active':''">{{item}}</span>
+        <span v-if="(index == tabIndex)&&color" :style="{'color':color,'border-bottom':'2px solid'+color}" >{{item}}</span>
+        <span v-else :class="index == tabIndex?'active':''">{{item}}</span>
       </li>
     </ul>
 </template>
@@ -15,6 +16,11 @@ export default {
   props: {
     //选项卡内容
     tabList: Array,
+    //选中颜色
+    color:{
+      type:String
+    },
+   
   },
   data(){
     return{
