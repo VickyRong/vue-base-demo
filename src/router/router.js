@@ -3,8 +3,9 @@ import Home from '../pages/Home';
 import cellDemo from '../pages/demo/cellDemo';
 import tabBarDemo from '../pages/demo/tabBarDemo';
 import navBarDemo from '../pages/demo/navBarDemo';
-import buttonDemo from '../pages/demo/vButtonDemo';
-import switchDemo from '../pages/demo/vSwitchDemo';
+import buttonDemo from '../pages/demo/xButtonDemo';
+import switchDemo from '../pages/demo/xSwitchDemo';
+import radioDemo from '../pages/demo/xRadioDemo';
 
 export default [
     {
@@ -20,6 +21,7 @@ export default [
             { path:'/demo/navBar',component:navBarDemo },
             { path:'/demo/button',component:buttonDemo },
             { path:'/demo/switch',component:switchDemo },
+            { path:'/demo/radio',component:radioDemo },
             
         ]
     }

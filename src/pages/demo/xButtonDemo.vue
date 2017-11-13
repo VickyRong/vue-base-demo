@@ -9,32 +9,32 @@
    
     <!--组件-->
     <div class="demo-tt g-mb">颜色</div>
-    <v-button>默认</v-button>
-    <v-button type="primary">primary</v-button>
-    <v-button type="danger">danger</v-button>
+    <x-button>默认</x-button>
+    <x-button type="primary">primary</x-button>
+    <x-button type="danger">danger</x-button>
 
     <div class="demo-tt g-mb">状态</div>
-    <v-button type="primary" loading>loading</v-button>
-    <v-button type="primary" disabled>disabled</v-button>
+    <x-button type="primary" loading>loading</x-button>
+    <x-button type="primary" disabled>disabled</x-button>
     
     <div class="demo-tt g-mb">幽灵按钮</div>
-    <v-button type="primary" plain>primary</v-button>
-    <v-button type="danger" plain>danger</v-button>
+    <x-button type="primary" plain>primary</x-button>
+    <x-button type="danger" plain>danger</x-button>
 
     <div class="demo-tt g-mb">尺寸</div>
-    <v-button type="primary" >big</v-button>
-    <v-button type="primary" size="middle">middle</v-button>
-    <v-button type="primary" size="small">small</v-button>
+    <x-button type="primary" >big</x-button>
+    <x-button type="primary" size="middle">middle</x-button>
+    <x-button type="primary" size="small">small</x-button>
     
     
   </div>
 </template>
 
 <script>
-import vButton from '../../components/vButton';
+import xButton from '../../components/xButton';
 export default {
   components:{
-    vButton
+    xButton
   }
 }
 </script>

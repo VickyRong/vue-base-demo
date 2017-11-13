@@ -13,7 +13,7 @@
         
     - 表单类  
         - [x] Switch
-        - [ ] Radio
+        - [x] Radio
         - [ ] Checkbox
         - [ ] V-number  -- 加减计数
 

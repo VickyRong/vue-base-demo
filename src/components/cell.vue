@@ -8,6 +8,7 @@ create by VickyRong on 2017/11/04. -->
       <span :style="{'color':color}">{{content}}</span>
     </div>
     <i v-if="arrow == false" class="iconfont icon-arrow-right s-fs28 s-fc-gy3"></i>
+    <slot></slot>
   </div>
 </template>
 

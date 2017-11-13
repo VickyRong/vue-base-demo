@@ -11,7 +11,7 @@ create by VickyRong on 2017/11/09. -->
 
 <script>
 export default {
-  name: 'switch',
+  name: 'x-switch',
   props:{
     //选中的值
     value:{

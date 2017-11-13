@@ -10,7 +10,7 @@ create by VickyRong on 2017/11/08. -->
 
 <script>
 export default {
-  name: "v-button",
+  name: "x-button",
   props: {
     //按钮文案
     content: {
