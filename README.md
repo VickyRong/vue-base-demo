@@ -14,7 +14,7 @@
     - 表单类  
         - [x] Switch
         - [x] Radio
-        - [ ] Checkbox
+        - [x] CheckList
         - [ ] V-number  -- 加减计数
 
     - 提示类

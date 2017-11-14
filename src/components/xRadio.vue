@@ -1,5 +1,5 @@
 <!--
- Radio组件
+ Radio组件（单选列表）
 create by VickyRong on 2017/11/13. -->
 <template>
   <div>

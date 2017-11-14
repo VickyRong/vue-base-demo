@@ -14,8 +14,8 @@
       <div>
         <router-link to="/demo/switch"><Cell content="Switch" icon="icon-switch s-fc-pk1 s-fs28" arrow></Cell></router-link>
         <router-link to="/demo/radio"><Cell content="Radio" icon="icon-radio s-fc-pk1 s-fs42" arrow></Cell></router-link>
-        <router-link to=""><Cell content="Checkbox" icon=""></Cell></router-link>
-        <router-link to=""><Cell content="V-number" icon=""></Cell></router-link>
+        <router-link to="/demo/checkList"><Cell content="CheckList" icon="icon-checkbox_fill s-fc-pk1 s-fs36" arrow></Cell></router-link>
+        <router-link to=""><Cell content="NumberCount" icon=""></Cell></router-link>
       </div>
       <h4>三.提示类</h4>
       <div>

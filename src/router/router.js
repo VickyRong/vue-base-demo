@@ -6,6 +6,7 @@ import navBarDemo from '../pages/demo/navBarDemo';
 import buttonDemo from '../pages/demo/xButtonDemo';
 import switchDemo from '../pages/demo/xSwitchDemo';
 import radioDemo from '../pages/demo/xRadioDemo';
+import checkListDemo from '../pages/demo/checkListDemo';
 
 export default [
     {
@@ -22,6 +23,7 @@ export default [
             { path:'/demo/button',component:buttonDemo },
             { path:'/demo/switch',component:switchDemo },
             { path:'/demo/radio',component:radioDemo },
+            { path:'/demo/checkList',component:checkListDemo },
             
         ]
     }
