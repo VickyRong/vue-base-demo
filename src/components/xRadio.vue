@@ -3,7 +3,7 @@
 create by VickyRong on 2017/11/13. -->
 <template>
   <div>
-      <div v-for="item in options" class="ui-radio">
+      <div v-for="item in options" class="ui-radio g-flex g-flex-v-center g-mb10">
         <input v-model="currentValue" @change="changePicked" :value="item" :id="item"  class="ui-radio-input" type="radio" >
         <span class="ui-radio-box"></span>
         <label :for="item">{{item}}</label>
@@ -41,16 +41,14 @@ export default {
    outline: none;
    display: none;
  } 
- label{
-   vertical-align: text-bottom;
- }
+
  .ui-radio-box{
    display: inline-block;
    width: rem(34);
    height: rem(34);
+   margin-right: rem(15);
    border-radius:100%;
    background-color:transparent;
-   vertical-align: text-bottom;
    border: 1px solid $c-gy4; 
    box-sizing: border-box;
    transition: transform .2s,cubic-bezier(0.075, 0.82, 0.165, 1),.2s;
