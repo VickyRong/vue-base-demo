@@ -20,7 +20,7 @@
       <h4>三.提示类</h4>
       <div>
         <router-link to=""><Cell content="Loading" icon=""></Cell></router-link>
-        <router-link to=""><Cell content="Toast" icon=""></Cell></router-link>
+        <router-link to="/demo/toast"><Cell content="Toast" icon="icon-toast s-fc-pk1 s-fs32" arrow></Cell></router-link>
         <router-link to=""><Cell content="MsgBox" icon=""></Cell></router-link>
       </div>
       <h4>四.功能类</h4>

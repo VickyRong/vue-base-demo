@@ -7,6 +7,7 @@ import buttonDemo from '../pages/demo/xButtonDemo';
 import switchDemo from '../pages/demo/xSwitchDemo';
 import radioDemo from '../pages/demo/xRadioDemo';
 import checkListDemo from '../pages/demo/checkListDemo';
+import toastDemo from '../pages/demo/toastDemo';
 
 export default [
     {
@@ -24,6 +25,7 @@ export default [
             { path:'/demo/switch',component:switchDemo },
             { path:'/demo/radio',component:radioDemo },
             { path:'/demo/checkList',component:checkListDemo },
+            { path:'/demo/toast',component:toastDemo },
             
         ]
     }
